@@ -16,9 +16,9 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
 
 set hlsearch
 exec "nohlsearch"
@@ -57,5 +57,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
 call plug#end()
 
-color snazzy
 let g:SnazzyTransparent = 1
+color snazzy
+
+
+
